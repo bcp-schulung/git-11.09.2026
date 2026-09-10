@@ -1,0 +1,45 @@
+# Environment / secrets — never commit
+.env
+.passwords.json
+.harbor-passwords.json
+.harbor-robot.json
+container-seminar-credentials.md
+harbor-credentials.md
+student-credentials/
+*.kubeconfig
+*.talosconfig
+
+# Terraform
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/kubeconfig
+terraform/talosconfig
+terraform/*.tfvars
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+**/.DS_Store
+terraform/tfplan
+.gitlab-passwords.json
+gitlab-admin-credentials.md
+
+# Java / Maven
+target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
